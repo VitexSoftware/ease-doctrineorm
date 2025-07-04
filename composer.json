@@ -1,0 +1,43 @@
+{
+    "name": "vitexsoftware/ease-doctrine",
+    "description": "FluentPDO-like API powered by DoctrineORM for easy migration.",
+    "type": "library",
+    "require": {
+        "php": ">=8.4",
+        "doctrine/orm": "^2.18",
+        "doctrine/dbal": "^3.9",
+        "symfony/polyfill-php80": "^1.29"
+    },
+    "require-dev": {
+        "vitexsoftware/ease-fluentpdo": "^1.4",
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "ergebnis/composer-normalize": "^2.47",
+        "ergebnis/php-cs-fixer-config": "^6.46",
+        "phpstan/phpstan-phpunit": "2.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ease\\Doctrine\\": "src/Ease/Doctrine/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EaseDoctrine\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitex Software",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+}
