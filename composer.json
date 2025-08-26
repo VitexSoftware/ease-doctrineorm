@@ -5,7 +5,7 @@
     "require": {
         "php": ">=8.4",
         "doctrine/orm": "^3.5",
-        "doctrine/dbal": "^3.9",
+        "doctrine/dbal": "^4.3",
         "symfony/polyfill-php80": "^1.29"
     },
     "require-dev": {
