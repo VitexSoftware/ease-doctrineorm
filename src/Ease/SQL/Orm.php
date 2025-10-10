@@ -67,7 +67,7 @@ trait Orm
      * @param mixed $value
      * @return bool
      */
-    public function setDataValue($columnName, $value)
+    public function setDataValue(string $columnName, $value): bool
     {
         $this->data[$columnName] = $value;
         return true;
