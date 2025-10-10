@@ -43,12 +43,12 @@ class Engine extends Brick
     /**
      * Key column name (primary key).
      */
-    public ?string $keyColumn = null;
+    public string $keyColumn = 'id';
 
     /**
      * Name column (for display purposes).
      */
-    public ?string $nameColumn = null;
+    public string $nameColumn = '';
 
     /**
      * Last modified column name.
@@ -555,5 +555,28 @@ class Engine extends Brick
         } else {
             return $this->insertToSQL($data) !== false;
         }
+    }
+
+    /**
+     * Get PDO instance for compatibility.
+     *
+     * @param array $options
+     * @return \PDO
+     */
+    public function getPdo($options = [])
+    {
+        return $this->getConnection()->getNativeConnection();
+    }
+
+    /**
+     * Database property for phinx compatibility.
+     */
+    public function __get($name)
+    {
+        if ($name === 'database') {
+            return $this->getConnection()->getDatabase();
+        }
+        
+        return null;
     }
 }
