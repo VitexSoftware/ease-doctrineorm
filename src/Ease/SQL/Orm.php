@@ -96,20 +96,6 @@ trait Orm
     }
 
     /**
-     * Set object name.
-     *
-     * @param null|string $objectName
-     * @return string
-     */
-    public function setObjectName($objectName = null): string
-    {
-        if ($objectName === '' || $objectName === null) {
-            $objectName = $this->getRecordName();
-        }
-        return parent::setObjectName($objectName);
-    }
-
-    /**
      * Add status message.
      *
      * @param mixed $message
