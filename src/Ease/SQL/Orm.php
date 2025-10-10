@@ -52,24 +52,24 @@ trait Orm
     /**
      * Get data value.
      *
-     * @param string $column
+     * @param string $columnName
      * @return mixed
      */
-    public function getDataValue(string $column)
+    public function getDataValue($columnName)
     {
-        return $this->data[$column] ?? null;
+        return $this->data[$columnName] ?? null;
     }
 
     /**
      * Set data value.
      *
-     * @param string $column
+     * @param string $columnName
      * @param mixed $value
      * @return bool
      */
-    public function setDataValue(string $column, $value): bool
+    public function setDataValue($columnName, $value)
     {
-        $this->data[$column] = $value;
+        $this->data[$columnName] = $value;
         return true;
     }
 
