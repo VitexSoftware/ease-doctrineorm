@@ -112,13 +112,14 @@ trait Orm
     /**
      * Add status message.
      *
-     * @param string $message
+     * @param mixed $message
      * @param string $type
-     * @return bool
+     * @param mixed $caller
+     * @return mixed
      */
-    public function addStatusMessage(string $message, string $type = 'info'): bool
+    public function addStatusMessage($message, $type = 'info', $caller = null)
     {
         // This method is overridden by parent classes that have logging capability
-        return true;
+        return parent::addStatusMessage($message, $type, $caller);
     }
 }
