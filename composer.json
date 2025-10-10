@@ -3,7 +3,8 @@
     "description": "FluentPDO-like API powered by DoctrineORM for easy migration.",
     "type": "library",
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.1",
+        "vitexsoftware/ease-core": "dev-main",
         "doctrine/orm": "^3.5",
         "doctrine/dbal": "^4.3",
         "symfony/polyfill-php80": "^1.29"
@@ -19,7 +20,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Ease\\Doctrine\\": "src/Ease/Doctrine/"
+            "Ease\\Doctrine\\": "src/Ease/Doctrine/",
+            "Ease\\SQL\\": "src/Ease/SQL/"
         }
     },
     "autoload-dev": {
