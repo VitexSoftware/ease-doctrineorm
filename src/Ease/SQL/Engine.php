@@ -73,7 +73,7 @@ class Engine extends Brick
     /**
      * @var array Data storage
      */
-    protected array $data = [];
+    public array $data = [];
 
     /**
      * Database object.

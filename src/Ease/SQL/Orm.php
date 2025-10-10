@@ -23,7 +23,7 @@ trait Orm
     /**
      * @var FluentQuery|null
      */
-    protected ?FluentQuery $fluent = null;
+    public ?FluentQuery $fluent = null;
 
     /**
      * Setup object properties based on options.
@@ -117,6 +117,7 @@ trait Orm
      */
     public function addStatusMessage(string $message, string $type = 'info'): bool
     {
-        return $this->logger ? $this->logger->log($type, $message) : false;
+        // This method is overridden by parent classes that have logging capability
+        return true;
     }
 }
