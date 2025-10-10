@@ -7,7 +7,8 @@
         "vitexsoftware/ease-core": "^1.49",
         "doctrine/orm": "^3.5",
         "doctrine/dbal": "^4.3",
-        "symfony/polyfill-php80": "^1.29"
+        "symfony/polyfill-php80": "^1.29",
+        "symfony/cache": "^7.0"
     },
     "require-dev": {
         "vitexsoftware/ease-fluentpdo": "^1.4",
