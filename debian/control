@@ -9,7 +9,7 @@ Priority: optional
 Homepage: https://github.com/VitexSoftware/php-vitexsoftware-ease-doctrineorm
 
 Package: php-vitexsoftware-ease-doctrineorm
-Depends: ${misc:Depends},php-vitexsoftware-ease-core (>= 1.49),php-doctrine-orm,php-doctrine-dbal,php-symfony-polyfill-php80,php-symfony-cache
+Depends: ${misc:Depends},php-vitexsoftware-ease-core (>= 1.49),php-doctrine-orm,php-doctrine-dbal,php-symfony-cache
 Architecture: all
 Section: web
 Priority: optional
