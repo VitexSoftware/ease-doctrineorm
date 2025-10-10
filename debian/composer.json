@@ -1,0 +1,23 @@
+{
+  "name": "deb/ease-doctrineorm",
+  "description": "DoctrineORM adapter for Ease Framework providing FluentPDO-like API",
+  "authors": [
+    {
+      "name": "Vitex Software",
+      "email": "info@vitexsoftware.cz"
+    }
+  ],
+  "require": {
+    "deb/ease-core": "*",
+    "doctrine/orm": "*",
+    "doctrine/dbal": "*",
+    "symfony/polyfill-php80": "*",
+    "symfony/cache": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ease\\Doctrine\\": "./Doctrine",
+      "Ease\\SQL\\": "./SQL"
+    }
+  }
+}

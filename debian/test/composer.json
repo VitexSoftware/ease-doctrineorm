@@ -1,0 +1,14 @@
+{
+    "name": "vitexsoftware/ease-doctrine-tests",
+    "description": "Test suite for php-vitexsoftware-ease-doctrineorm",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ease\\Doctrine\\": "../../src/Ease/Doctrine/",
+            "Ease\\SQL\\": "../../src/Ease/SQL/",
+            "EaseDoctrine\\Tests\\": "../../tests/"
+        }
+    }
+}

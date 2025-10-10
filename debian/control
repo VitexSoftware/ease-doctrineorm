@@ -1,0 +1,35 @@
+Source: php-vitexsoftware-ease-doctrineorm
+Build-Depends: debhelper (>= 7.0.50~), composer, moreutils, jq
+#phpdocumentor
+Section: web
+Standards-Version: 3.9.8
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Uploaders: Vitex <vitex@hippy.cz>
+Priority: optional
+Homepage: https://github.com/VitexSoftware/php-vitexsoftware-ease-doctrineorm
+
+Package: php-vitexsoftware-ease-doctrineorm
+Depends: ${misc:Depends},php-vitexsoftware-ease-core (>= 1.49),php-doctrine-orm,php-doctrine-dbal,php-symfony-polyfill-php80,php-symfony-cache
+Architecture: all
+Section: web
+Priority: optional
+Description: DoctrineORM adapter for EasePHP Framework
+ DoctrineORM adapter for ease framework providing FluentPDO-like API
+ powered by DoctrineORM for easy migration.
+
+#Package: php-vitexsoftware-ease-doctrineorm-doc
+#Depends: ${misc:Depends}
+#Architecture: all
+#Suggests: www-browser
+#Section: doc
+#Priority: optional
+#Description: Ease DoctrineORM Documentation
+# Ease DoctrineORM apigen documentation.
+
+#Package: php-vitexsoftware-ease-doctrineorm-dev
+#Depends: ${misc:Depends}, php-vitexsoftware-ease-doctrineorm, phpunit
+#Architecture: all
+#Section: doc
+#Priority: optional
+#Description: Ease DoctrineORM Development files
+# Ease DoctrineORM phpunit test files

@@ -1,0 +1,8 @@
+php-vitexsoftware-ease-doctrineorm (1.0.0) UNRELEASED; urgency=medium
+
+  * Initial release.
+  * DoctrineORM adapter for ease framework providing FluentPDO-like API
+  * Supports Doctrine ORM 3.5+ and DBAL 4.3+
+  * Compatible with PHP 8.1+
+
+ -- vitex <info@vitexsoftware.cz>  Mon, 10 Oct 2025 16:30:00 +0100

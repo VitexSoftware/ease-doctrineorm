@@ -1,0 +1,3 @@
+src/Ease/Doctrine/*		usr/share/php/EaseDoctrine/Doctrine/
+src/Ease/SQL/*			usr/share/php/EaseDoctrine/SQL/
+debian/composer.json		usr/share/php/EaseDoctrine/
