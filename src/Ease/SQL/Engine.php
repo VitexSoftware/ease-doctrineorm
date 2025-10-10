@@ -392,7 +392,7 @@ class Engine extends Brick
      *
      * @param string $keyColumn
      */
-    public function setkeyColumn($keyColumn)
+    public function setKeyColumn(string $keyColumn): void
     {
         $this->keyColumn = $keyColumn;
     }
