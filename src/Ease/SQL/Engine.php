@@ -71,9 +71,9 @@ class Engine extends Brick
     protected ?\Doctrine\DBAL\Connection $connection = null;
 
     /**
-     * @var array Data storage
+     * @var array|null Data storage
      */
-    public array $data = [];
+    public ?array $data = [];
 
     /**
      * Database object.
