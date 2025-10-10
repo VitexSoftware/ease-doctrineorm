@@ -400,10 +400,14 @@ class Engine extends Brick
     /**
      * Get the value of the key column (primary key).
      *
+     * @param array|null $data
      * @return mixed
      */
-    public function getMyKey()
+    public function getMyKey(?array $data = [])
     {
+        if (!empty($data)) {
+            return $data[$this->keyColumn] ?? null;
+        }
         return $this->getDataValue($this->keyColumn);
     }
 

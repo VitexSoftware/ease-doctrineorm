@@ -98,14 +98,15 @@ trait Orm
     /**
      * Set object name.
      *
-     * @param string|null $objectName
+     * @param string $objectName
+     * @return string
      */
-    public function setObjectName(?string $objectName = null): void
+    public function setObjectName($objectName = '')
     {
-        if ($objectName === null) {
+        if ($objectName === '') {
             $objectName = $this->getRecordName();
         }
-        parent::setObjectName($objectName);
+        return parent::setObjectName($objectName);
     }
 
     /**
