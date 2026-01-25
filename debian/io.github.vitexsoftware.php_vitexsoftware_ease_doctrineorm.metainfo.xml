@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.vitexsoftware.php_vitexsoftware_ease_doctrineorm</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>php-vitexsoftware-ease-doctrineorm</name>
+  <summary>DoctrineORM adapter for EasePHP Framework</summary>
+  <description>
+    <p>
+      DoctrineORM adapter for ease framework providing FluentPDO-like API powered by DoctrineORM for easy migration.
+    </p>
+  </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">https://github.com/VitexSoftware/ease-doctrineorm</url>
+  <url type="bugtracker">https://github.com/VitexSoftware/ease-doctrineorm/issues</url>
+  <developer id="cz.vitexsoftware">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+</component>
