@@ -1,12 +1,18 @@
 Source: php-vitexsoftware-ease-doctrineorm
-Build-Depends: debhelper (>= 7.0.50~), composer, moreutils, jq
-#phpdocumentor
-Section: web
-Standards-Version: 3.9.8
+Section: php
+Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
-Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ pkg-php-tools (>= 1.7~),
+ phpab,
+ composer,
+ moreutils,
+ jq,
+Standards-Version: 4.7.0
 Homepage: https://github.com/VitexSoftware/php-vitexsoftware-ease-doctrineorm
+Rules-Requires-Root: no
 
 Package: php-vitexsoftware-ease-doctrineorm
 Depends: ${misc:Depends},php-vitexsoftware-ease-core (>= 1.49),php-doctrine-orm,php-doctrine-dbal,php-symfony-cache

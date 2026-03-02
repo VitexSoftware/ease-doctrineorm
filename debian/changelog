@@ -1,4 +1,4 @@
-php-vitexsoftware-ease-doctrineorm (1.0.0) UNRELEASED; urgency=medium
+php-vitexsoftware-ease-doctrineorm (1.0.0) unstable; urgency=medium
 
   * Initial release.
   * DoctrineORM adapter for ease framework providing FluentPDO-like API
