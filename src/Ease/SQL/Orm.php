@@ -535,7 +535,7 @@ trait Orm
      */
     public function listingQuery()
     {
-        $em = \Doctrine\ORM\EntityManager::getEntityManager();
+        $em = $this->getEntityManager(); // Use the instance method to get EntityManager
         return $em->createQueryBuilder()
             ->select('e')
             ->from($this->getMyTable(), 'e');
