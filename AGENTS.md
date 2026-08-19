@@ -1,4 +1,4 @@
-# WARP.md - Working AI Reference for php-vitexsoftware-ease-doctrineorm
+# AGENTS.md - Working AI Reference for php-vitexsoftware-ease-doctrineorm
 
 ## Project Overview
 **Type**: PHP Project
